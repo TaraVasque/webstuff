@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="death-zone">
+            <canvas id="gameCanvas" width="360" height="360"></canvas>
+        </div>
+    </div>
+    <div class="settings">
+        <h2>Settings</h2>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="100">Easy</option>
+            <option value="75">Medium</option>
+            <option value="50">Hard</option>
+        </select>
+        <br>
+        <label for="sound">Sound:</label>
+        <input type="checkbox" id="sound" checked>
+    </div>
+    <audio id="bgMusic" src="/Sounds/BGMusic.mp3" loop></audio>
+    <audio id="eatSound" src="/Sounds/pop.mp3"></audio>
+    <audio id="gameOverSound" src="/Sounds/death.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
